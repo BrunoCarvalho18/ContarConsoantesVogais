@@ -1,24 +1,21 @@
-public class ContarConsoantesVogais {
+public class ContarVogais{
 
 	public static void main(String[] args) {
-		System.out.println(contarvogaisEConsoantes("br"));
+		System.out.println(vogais("aeiou"));
 	}
 
-	private static int contarvogaisEConsoantes(String texto) {
-		int contarVogaisEConsoantes = 0;
+	private static int vogais(String texto) {
+		int contarVogais = 0;
 
 		texto.toLowerCase();
 
 		for (int i = 0; i < texto.length(); i++) {
 			char c = texto.charAt(i);
 			if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u')
-				contarVogaisEConsoantes++;
-			else {
-				contarVogaisEConsoantes++;
-			}
+				contarVogais++;
 		}
 
-		return contarVogaisEConsoantes;
+		return contarVogais;
 	}
 
 }
